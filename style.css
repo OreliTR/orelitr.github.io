@@ -1,126 +1,128 @@
-body
-{
-	font-family: 'Lato', sans-serif;
-}
-
-#blocpage
-{
-	width: 900px;
+body /*ici on indique l'élément à modifier, soit tout ce qui est dans body*/
+{ 
+	background-color: #28282d; /*pantone anthracite 19-4007 */
+	font-family: 'Roboto', sans-serif; /* je veux Roboto, sinon une police sans serif */
+	width: 1000px;
 	margin: auto;
 }
 
-header
+.menu-container /* on met en page le bloc général ayant la class menu-container */
 {
-	background-color: #302320;
-	display: flex;
-	justify-content: space-between;
-	align-items: flex-end;
+	/*background-color: blue; /*retirez les commentaires de cette ligne pour afficher le bloc en bleu*/
+	display: flex; /* on indique qu'on veut utiliser la méthode flex */
+	justify-content: center; /* on centre l'affichage des éléments dans le bloc */
 }
 
-#titreprincipal
+
+.menu /* bloc comprenant img, h1, h2, nav*/
+{
+	display: flex; /* on active flex */
+	justify-content: space-around; /* ici on joue sur la disposition des éléments */
+	flex-direction: column; /* on veut afficher les différents blocs les uns en dessous des autres */
+	align-items: center; /* ici on veut que les éléments soient alignés sur la même ligne*/
+}
+
+.top-header
 {
 	display: flex;
-	flex-direction: column;
 	justify-content: center;
-	align-items: center;
 }
 
-#logo
+.titles
 {
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	align-items: center;
-	margin-bottom: 5px;
+	margin-left: 50px; /* je décolle les titres de l'image */
+	text-align: center; /* pour centrer les titres l'un sous l'autre */
 }
 
-#logo img
+#pp /*SESSION 4 taille de l'image */
 {
-	width: 25%;
-	height: 25%;
-	padding-left: 20px;
+	width: 15%; /*pas de height */
 }
 
-header h1
+
+
+h1 /*on veut modifier le titre h1 */
 {
-	color: #F28333;
-	font-size: 2.6em;
-	font-family: 'Permanent Marker', cursive;
-	margin: 0 0 0 20px;
+	color: #EDC373; /* Pantone 13-0932 Tcx Cornsilk Color */
+	font-family: 'Press Start 2P', cursive; /* je veux Press Start 2P, sinon une police dite cursive */
 }
 
-header h2
+h2 /*on veut modifier les titres h2 */
 {
-	color: #ffffff;
-	font-size: 1.4em;
-	font-family: 'Indie Flower', cursive;
-	padding-left: 35px;
+	color: #6667AB; /* Ppantone Veri Peri */
+	font-family: 'Indie Flower', cursive; /* je veux Indie Flower, sinon une police dite cursive */
 }
 
-nav ul
+nav ul /* SESSION 4 on masque les puces de la liste à puces */
 {
 	list-style-type: none;
-	display: flex;
+	display: flex; /* on aligne les liens à l'horizontale */
 }
 
 nav li
 {
-	font-family: 'Indie Flower', cursive;
-	font-size: 1.2em;
-	margin-right: 15px;
+	margin: 15px; /* on ajoute de l'espace entre les différents éléments de la liste pour que ce soit lisible */
 }
 
-nav a
+
+h3 /*on veut modifier TOUS les titres h3 */
 {
-	color: #F28333;
+	color: #86A1A9; /* Pantone 16-4411 Tcx Tourmaline Color */
 }
 
-nav a:hover
+p /*on veut modifier TOUS les paragraphes */
 {
-	color: #9B84F0;
+	color: #f0eee9; /*Pantone 11-4201 Tcx Cloud Dancer*/
 }
 
-section h1, h2, h3
+ul
 {
-	font-weight: bold;
+	color: #f0eee9; /*Pantone 11-4201 Tcx Cloud Dancer*/
 }
 
-section h3
+a /*on veut modifier TOUS les liens */
 {
-	font-style: underline;
+	color: #D3507A; /*Pantone 18-2133 Tcx Pink Flambé Color*/
+}
+
+a:hover /*hover indique "au survol du curseur de la souris */
+{
+	color: #EDC373; /* je veux que mes liens aient une autre couleur au survol */
+}
+
+
+main
+{
+	/*background-color: blueviolet; /* ceci est ma couleur de test pour voir les effets 
+	de mes modifications sur le bloc main*/
+	display: flex; /* pour passer le aside sur la droite */
+	padding: 5px;
+}
+
+.bloc1
+{
+	/*background-color: red; /*couleur de test*/
+	margin-right: 20px;
 }
 
 section
 {
-	display: flex;
-	background-color: #F2AD7C;
+	/*background-color: gray; /* couleur de test */
+	padding-left: 5px;
+	padding-right: 100px;
 	padding-bottom: 50px;
 }
 
-#contenu
-{
-	flex: 3;
-	margin-right: 20px;
-	font-size: 1em;
-	padding-left: 15px;
-}
-
-#contenu ul
+section ul
 {
 	list-style-type: none;
 }
 
-#contenu h4, p
-{
-	padding-left: 35px;
-}
-
 aside
 {
-	flex: 1.2;
-	font-size: 1em;
+	/*background-color: green; /* couleur de test */
+	border-left: 3px solid #fff;
 	padding-left: 15px;
-	border-left: 3px solid #302320;
 }
 
 aside ul
@@ -130,28 +132,13 @@ aside ul
 
 footer
 {
-	background-color: #302320;
-	color:#F2AD7C;
+	/*background-color: orange;*/
 	display: flex;
-	flex-direction: row;
 	justify-content: space-around;
-	align-items: center;
 	padding-bottom: 50px;
 }
 
-
-
-footer a
+.blocf1, .blocf2, .blocf3
 {
-	color:#ffffff;
-}
-
-footer a:hover
-{
-	color: #F28333;
-}
-
-footer ul
-{
-	list-style-type: none;
+	text-align: center;
 }

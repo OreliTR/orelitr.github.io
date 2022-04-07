@@ -1,119 +1,169 @@
-<!DOCTYPE html>
-<html lang="fr"> <!-- indiquer que le site est français-->
-<head><!--utile au navigateur et à Google-->
-	<meta charset="utf-8"><!--pour permettre l'affichage des caractères spéciaux et lettres accentuées-->
-	<meta name="description" content="Aurélie Perrin, traduction spécialisée en localisation de jeux vidéo, de l'anglais vers le français. Je propose des services de consulting, de gestion de projet, de localisation, de relecture et correction, d'édition et d'assurance qualité pour la localisation.">
+<!DOCTYPE html> <!--c'est une balise spéciale qui indique le type de document-->
+<html lang="fr"> <!--indique que le site est en français-->
 
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Lato:wght@300&family=Permanent+Marker&display=swap" rel="stylesheet">
+	<head> <!--utile au navigateur et à Google-->
 
-	<title>Aurélie Perrin, spécialiste en localisation de jeux vidéo</title><!-- titre de l'onglet-->
-</head>
+		<meta charset="utf-8"> <!-- permet l'affichage des caractères spéciaux et des lettres accentuées-->
+		<meta name="description" content="Aurélie Perrin, spécialiste et consultante en localisation de jeux vidéo, de l'anglais vers le français."> <!-- la meta description est le paragraphe que vous voyez dans les résultats de recherche Google et qui résume le site-->
 
-<body><!-- ce que le navigateur doit afficher-->
-	<div id="blocpage">
+		<title>Aurélie Perrin - CV</title> <!-- ceci est le titre de l'onglet-->
 
-	<header><!--logo, prénom nom (titre), métier (sous-titre)-->
+		<link rel="stylesheet" href="style.css">
+		
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Press+Start+2P&family=Roboto&display=swap" rel="stylesheet">
 
-		<div id="titreprincipal">
+	</head> <!-- ferme la balise head du début -->
 
-			<div id="logo">
-				<img src="img\cassa2.png" alt="logo d'Aurélie Perrin, traductrice de jeux vidéo"/>
-				<h1>Aurélie Perrin</h1>
+	<body>
+		<!-- on place les balises de niveau 2 ici, car c'est là que ce trouve le contenu à
+		afficher dans le navigateur -->
+
+
+		<header class="menu-container"> <!-- en-tête de la page qui contiendra le logo + titre 1 + sous-titre ou titre 2 -->
+
+			<div class="menu"> <!-- SESSION 4 on rajoute une balise "vide de sens" div pour la mise en page, comprend : [[IMG + [H1 +H2]] + NAVIGATION] -->
+
+					<div class="top-header"> <!-- on regroupe [IMG + [H1+H2]] -->
+						<img src="img/cassa2.png" alt="Avatar style manga sur fond noir" id="pp"> <!-- image principale, photo ou logo -->
+
+						<div class="titles"> <!-- SESSION 4 on regroupe H1 et H2 -->
+							<h1>Aurélie Perrin</h1> <!-- titre de mon CV -->
+
+							<h2>Spécialiste en localisation de jeux vidéo</h2> <!-- sous-titre -->
+						</div> <!-- fin de TITLES -->
+					</div> <!-- fin de TOP-HEADER -->
+
+				<nav> <!-- bloc pour indiquer les liens de navigation de la page -->
+
+					<ul><!-- liste à puce pour afficher les liens de la page -->
+						<li><a href="#presentation">Présentation</a></li> <!-- lien pour accéder à la section Présentation -->
+						<li><a href="#experience">Expériences</a></li> <!-- lien pour accéder à la section Expériences -->
+						<li><a href="#formations">Formations</a></li>  <!-- lien pour accéder à la section Formations -->
+						<li><a href="#articles">Articles</a></li> <!-- lien pour accéder à la section Articles -->
+						<li><a href="english.html">English</a></li> <!-- lien pour accéder à la page en anglais -->
+					</ul>
+				
+				</nav>
+
+			</div> <!-- fin de MENU-->
+
+		</header> <!-- fin de HEADER MENU-CONTAINER -->
+
+
+		<main><!--section principale -->
+
+			<div class="bloc1">
+			<section> <!-- section À propos -->
+				<h2 id="presentation">Présentation</h2> <!-- j'ai rajouté un id pour faire une ancre depuis le menu tout en haut pour amener les visiteurs ici en un clic -->
+
+					<p>J’aide les devs indés et les studios de jeux à optimiser leur processus de localisation et leur marketing.<br>
+					Ce que je peux vous apporter :
+						<ul>
+							<li>🎮 correction et révision de vos textes français (issus de votre jeu ou de vos supports de communication) avant que vous les envoyiez en traduction afin de repérer les dernières coquilles et éviter des aller-retour coûteux.</li>
+							<li>🎮 gestion de projet de localisation pour vous aider à assembler et gérer une équipe de traducteurs compétents et spécialisés. Vous gagnerez du temps pour vous concentrer les autres aspects importants de votre projet.</li>
+							<li>🎮 consulting pour vous aider à préparer le processus de localisation dans les meilleures conditions possibles, des vérifications techniques de bases à la préparation du kit de localisation, exemple.</li>
+						</ul>
+					</p>
+
+			</section>
+
+
+			<section> <!-- section Expériences -->
+				<h2 id="experience">Expériences</h2> <!-- j'ai rajouté un id pour faire une ancre depuis le menu tout en haut pour amener les visiteurs ici en un clic -->
+
+					<h3>Spécialiste en localisation de jeux vidéo</h3>
+						<p>Oreli Translation<br>Juin 2014- Aujourd'hui</p>
+
+					<h3>Enseignante et intervenante en localisation de jeux vidéo</h3>
+						<p>Université de Bourgogne<br>Octobre 2016 - Aujourd'hui</p>
+
+					<h3>Présidente LocSIG IGDA</h3>
+						<p>Janvier 2022 - Aujourd'hui</p>
+				
+			</section>
+
+
+			<section> <!--section Formations -->
+				<h2 id="formations">Formations</h2> <!-- j'ai rajouté un id pour faire une ancre depuis le menu tout en haut pour amener les visiteurs ici en un clic -->
+
+					<h3>Licence LEA - anglais, espagnol</h3>
+						<p>Université Lumière Lyon 2</p>
+
+					<h3>Programmation de sites web - Web / multimedia and webmaster</h3>
+						<p>Conservatoire National des Arts et Métiers - Certificat professionnel</p>
+
+					<h3>Sous-titrage</h3>
+						<p>Formation organisée par la SFT</p>
+
+					<h3>Copywriting</h3>
+						<p>Formation continue en ligne</p>
+				
+			</section>
+			</div>	<!-- fin de BLOC 1-->
+
+			<aside> <!-- colonne placée à droite ou à gauche avec des infos complémentaires -->
+				<h3>Langues</h3>
+					<ul>
+						<li>Anglais</li>
+						<li>Espagnol</li>
+						<li>Finnois</li>
+						<li>HTML/CSS</li>
+					</ul>
+
+				<h3>Compétences informatiques</h3>
+					<ul>
+						<li>Outils de TAO</li>
+						<li>Outils de PAO</li>
+						<li>Outils web (Wordpress, FTP)</li>
+					</ul>
+
+				<h3>Outils jeux vidéo</h3>
+					<ul>
+						<li>Twine</li>
+						<li>Inkle</li>
+						<li>Unity</li>
+					</ul>
+
+					<hr> <!--ligne horizontale -->
+
+				<h3 id="articles">Articles</h3> <!-- j'ai rajouté un id pour faire une ancre depuis le menu tout en haut pour amener les visiteurs ici en un clic -->
+					<p>Revue Traduire 244 – <a href="https://journals.openedition.org/traduire/2285" title="Revue de la SFT" target="_blank">Au cœur de la terminologie du jeu vidéo</a></p>
+				<!-- ce lien renvoie vers une page externe -->
+
+					<hr> <!--ligne horizontale -->
+
+				<h3>Télécharger mon CV en PDF</h3>
+					<p><a href="doc/CV_AureliePerrin_English-FrenchVideogameLocalization_2022.pdf" title="mon CV">Cliquez pour télécharger</a></p>
+
+			</aside> <!-- rajouter mes textes écrits ou juste un lien vers mon article -->
+
+
+		</main>
+		<hr> <!--ligne horizontale -->
+
+		<footer> <!-- pied de page avec les informations de contact et un retour en haut de la page -->
+			
+			<div class="blocf1">
+				<p>Contactez-moi<br><br>
+					<a href="mailto:aurelie@orelitranslation.com" title="Cliquez pour m'envoyer un e-mail">E-mail</a>
+				</p>
 			</div>
 
-			<h2>Spécialiste en localisation de jeux vidéo</h2>
+			<div class="blocf2">
+				<p>Réseaux sociaux<br><br>
+					<a href="https://twitter.com/oreli_L10N" target="_blank">Twitter</a><br>
+					<a href="https://www.linkedin.com/in/aureliejperrin-game-localization/" target="_blank">LinkedIn</a>
+				</p>
+			</div> <!-- fin de BLOCF2 -->
 
-		</div>
+			<div class="blocf3">
+				<p>Navigation<br><br><a href="#">Haut de page</a></p>
+			</div>
+			
+		</footer>
 
-		<nav>
-			<ul>
-				<li><a href="#me">Présentation</a></li>
-				<li><a href="#xp">Expériences</a></li>
-				<li><a href="#tuto">Formation</a></li>
-				<li><a href="#contact">Contact</a></li>
-			</ul>
-		</nav>
-	</header>
+	</body>
 
-	<section><!--texte-->
-
-		<div id="contenu">
-		<h2>À propos</h2>
-
-		<h3 id="me">Présentation</h3>
-
-		<p>J’aide les devs indés et les studios de jeux à optimiser leur processus de localisation et leur marketing.<br>Ce que je peux vous apporter :<br>
-			<ul>
-				<li>🎮 correction et révision de vos textes français (issus de votre jeu ou de vos supports de communication) avant que vous les envoyiez en traduction afin de repérer les dernières coquilles et éviter des aller-retour coûteux.</li>
-				<li>🎮 gestion de projet de localisation pour vous aider à assembler et gérer une équipe de traducteurs compétents et spécialisés. Vous gagnerez du temps pour vous concentrer les autres aspects importants de votre projet.</li>
-				<li>🎮 consulting pour vous aider à préparer le processus de localisation dans les meilleures conditions possibles, des vérifications techniques de bases à la préparation du kit de localisation, exemple.</li>
-			</ul>
-		</p>
-
-		<h3 id="xp">Expériences</h3>
-			<h4>Traductrice et spécialiste en localisation de jeux vidéo</h4>
-			<p>Oreli Translation<br>Juin 2014 – Aujourd’hui</p>
-
-			<h4>Intervenante en localisation de jeux vidéo</h4>
-			<p>Université de Bourgogne<br>Oct. 2016 – Aujourd’hui</p>
-
-			<h4>Indie Localizer anglais-français</h4>
-			<p>Indie Localizers Team<br>Juil. 2016 – Aujourd’hui</p>
-
-
-		<h3 id="tuto">Formation</h3>
-
-			<h4>Université Lumière (Lyon II)</h4>
-			<p>Licence LEA - anglais, espagnol</p>
-
-			<h4>Conservatoire National des Arts et Métiers</h4>
-			<p>Certificat professionnel - Programmation de sites web - Web / multimedia and webmaster</p>
-		</div>
-
-		<aside><!--compétences-->
-			<h4>Langues</h4>
-			<ul>
-				<li>Anglais</li>
-				<li>Espagnol</li>
-				<li>Finnois</li>
-				<li>HTML/CSS</li>
-			</ul>
-
-			<h4>Compétences informatiques</h4>
-			<ul>
-				<li>Outils TAO</li>
-				<li>Outils PAO</li>
-				<li>Outils web (WordPress, FTP)</li>
-			</ul>
-
-			<h4>Outils jeux vidéo</h4>
-			<ul>
-				<li>Twine</li>
-				<li>Inkle</li>
-				<li>Unity</li>
-			</ul>
-		</aside>
-
-	</section>
-
-	<footer><!--infos de contact-->
-		<p>Contactez-moi par email<br><br><a href="mailto:aurelie@orelitranslation.com">Email</a></p>
-
-		<div id="social">
-		<p>Réseaux sociaux
-			<ul>
-				<li><a target="_blank" href="https://twitter.com/oreli_L10N">Twitter</a></li>
-				<li><a target="_blank" href="https://www.linkedin.com/in/aureliejperrin-game-localization/">LinkedIn</a></li>
-			</ul>
-		</p>
-		</div>
-
-		<div id="top"><p>Navigation<br><br><a href="#">Haut de page</a></p>
-		</div>
-
-	</footer>
-</div>
-</body>
-</html>
+</html> <!-- ferme la balise html du début -->
